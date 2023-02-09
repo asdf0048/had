@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALCULATOR"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#50394c"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/result"
+        android:hint="0"
+        android:gravity="right"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:textSize="30dp"
+            android:id="@+id/seven"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:backgroundTint="#b2b2b2"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:textSize="30dp"
+            android:id="@+id/eight"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:backgroundTint="#b2b2b2"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:textSize="30dp"
+            android:id="@+id/nine"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:backgroundTint="#b2b2b2"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="30dp"
+            android:id="@+id/plus"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:backgroundTint="#ff7b25"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textSize="30dp"
+            android:id="@+id/four"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:backgroundTint="#b2b2b2"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="30dp"
+            android:id="@+id/five"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:backgroundTint="#b2b2b2"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:textSize="30dp"
+            android:id="@+id/six"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:backgroundTint="#b2b2b2"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="30dp"
+            android:id="@+id/minus"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:backgroundTint="#ff7b25"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="30dp"
+            android:id="@+id/one"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:backgroundTint="#b2b2b2"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textSize="30dp"
+            android:id="@+id/two"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:backgroundTint="#b2b2b2"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="30dp"
+            android:id="@+id/three"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:backgroundTint="#b2b2b2"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textSize="30dp"
+            android:id="@+id/product"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:backgroundTint="#ff7b25"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textSize="30dp"
+            android:id="@+id/point"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:backgroundTint="#ff7b25"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="30dp"
+            android:id="@+id/zero"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:backgroundTint="#b2b2b2"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="="
+            android:textSize="30dp"
+            android:id="@+id/equals"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:backgroundTint="#ff7b25"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textSize="30dp"
+            android:id="@+id/division"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:backgroundTint="#ff7b25"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AC"
+            android:textSize="30dp"
+            android:id="@+id/clear"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:backgroundTint="#ff7b25"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+
+
+----------------------------------------------------------------------------------------------------------------------
+
+package com.example.calculator;
+
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+
+    EditText result1;
+    String operator="";
+    Button one,two,three,four,five,six,seven,eight,nine,plus,minus,point,product,division,clear,equals,zero;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        result1=findViewById(R.id.result);
+        one=findViewById(R.id.one);
+        two=findViewById(R.id.two);
+        three=findViewById(R.id.three);
+        four=findViewById(R.id.four);
+        five=findViewById(R.id.five);
+        six=findViewById(R.id.six);
+        seven=findViewById(R.id.seven);
+        eight=findViewById(R.id.eight);
+        nine=findViewById(R.id.nine);
+        zero=findViewById(R.id.zero);
+        plus=findViewById(R.id.plus);
+        minus=findViewById(R.id.minus);
+        product=findViewById(R.id.product);
+        division=findViewById(R.id.division);
+        point=findViewById(R.id.point);
+        equals=findViewById(R.id.equals);
+        clear=findViewById(R.id.clear);
+
+        one.setOnClickListener(this);
+        two.setOnClickListener(this);
+        three.setOnClickListener(this);
+        four.setOnClickListener(this);
+        five.setOnClickListener(this);
+        six.setOnClickListener(this);
+        seven.setOnClickListener(this);
+        eight.setOnClickListener(this);
+        nine.setOnClickListener(this);
+        zero.setOnClickListener(this);
+// operators
+        plus.setOnClickListener(this);
+        minus.setOnClickListener(this);
+        product.setOnClickListener(this);
+        division.setOnClickListener(this);
+        equals.setOnClickListener(this);
+        clear.setOnClickListener(this);
+        point.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View view) {
+        double finalResult = 0.0;
+        switch(view.getId())
+        {
+            case R.id.one: result1.append("1");
+                break;
+            case R.id.two: result1.append("2");
+                break;
+
+            case R.id.three: result1.append("3");
+                break;
+
+            case R.id.four: result1.append("4");
+                break;
+
+            case R.id.five: result1.append("5");
+                break;
+
+            case R.id.six: result1.append("6");
+                break;
+
+            case R.id.seven: result1.append("7");
+                break;
+
+            case R.id.eight: result1.append("8");
+                break;
+
+            case R.id.nine: result1.append("9");
+                break;
+
+            case R.id.zero: result1.append("0");
+                break;
+
+            case R.id.plus: result1.append("+");
+                operator="+";
+                break;
+            case R.id.minus: result1.append("-");
+                operator="-";
+                break;
+            case R.id.product: result1.append("*");
+                operator="*";
+                break;
+            case R.id.division: result1.append("/");
+                operator="/";
+                break;
+
+            case R.id.point: result1.append(".");
+                operator=".";
+                break;
+
+            case R.id.equals: finalResult=
+                    evaluateExpression(result1.getText().toString(),operator);
+                result1.setText(String.valueOf(finalResult));
+                break;
+
+            default:return;
+        }
+    }
+
+    private double evaluateExpression(String res, String operatorPressed)
+    {
+        String[] tokens = res.split("\\+|-|\\*|\\/");
+        double firstOperand = Double.parseDouble(tokens[0]); //convert string to double
+        double secondOperand = Double.parseDouble(tokens[1]);
+        switch(operatorPressed)
+        {
+            case "+": return firstOperand + secondOperand;
+            case "-": return firstOperand - secondOperand;
+            case "*": return firstOperand * secondOperand;
+            case "/": return firstOperand / secondOperand;
+            default: return 0;
+        }
+    }
+}
+
+

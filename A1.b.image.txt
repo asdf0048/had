@@ -1,0 +1,67 @@
+IMAGE SWITCHER
+
+XML CODE
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/myImg"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/sun1"
+        android:layout_margin="20dp"/>
+    <Button
+        android:id="@+id/click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:text="Click" />
+</LinearLayout>
+
+-------------------------------------------------------------------------------------------------------------------
+
+JAVA CODE
+
+package com.example.abimage;
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+public class MainActivity extends AppCompatActivity {
+    int flag = 1 ;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        ImageView imageView;
+        Button change ;
+        imageView = findViewById(R.id.myImg) ;
+        change = findViewById(R.id.click);
+        change.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+// Code to change the image
+            }
+        });
+        change.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(flag==1){
+                    imageView.setImageResource(R.drawable.sun1);
+                    flag=2 ;
+                }else{
+                    imageView.setImageResource(R.drawable.sun2);
+                    flag=1 ;
+                }
+            }
+        });
+    }
+}
